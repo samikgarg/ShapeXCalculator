@@ -1,0 +1,2 @@
+rootProject.name='Mathematical Geometry Calculator'
+include ':app'

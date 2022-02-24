@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/squareBackButton"
+        android:layout_width="42dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="112dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/squareSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/squareFragmentImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/squareFragmentImageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/squareFragmentImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="118dp"
+        android:contentDescription="@string/square"
+        app:layout_constraintEnd_toStartOf="@+id/squareCalculateTextView"
+        app:layout_constraintStart_toEndOf="@+id/squareBackButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/square" />
+
+    <TextView
+        android:id="@+id/squareFragmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/square"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/squareFragmentImageView"
+        app:layout_constraintTop_toBottomOf="@+id/squareFragmentImageView" />
+
+    <TextView
+        android:id="@+id/squareSideLengthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/sideLength_l"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/squareDiagonalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/diagonal_d"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareSideLengthTextView" />
+
+    <TextView
+        android:id="@+id/squarePerimeterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/perimeter"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareDiagonalTextView" />
+
+    <TextView
+        android:id="@+id/squareAreaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/area"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squarePerimeterTextView" />
+
+    <EditText
+        android:id="@+id/squareSideLengthEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/squareSideLengthTextView"
+        app:layout_constraintStart_toStartOf="@+id/squareDiagonalEditText"
+        app:layout_constraintTop_toTopOf="@+id/squareSideLengthTextView" />
+
+    <EditText
+        android:id="@+id/squareDiagonalEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/squareDiagonalTextView"
+        app:layout_constraintStart_toStartOf="@+id/squarePerimeterEditText"
+        app:layout_constraintTop_toTopOf="@+id/squareDiagonalTextView" />
+
+    <EditText
+        android:id="@+id/squarePerimeterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/squareAreaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/squareDiagonalEditText" />
+
+    <EditText
+        android:id="@+id/squareAreaEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/squareDiagonalTextView"
+        app:layout_constraintTop_toBottomOf="@+id/squarePerimeterEditText" />
+
+    <TextView
+        android:id="@+id/squareWorking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/squareSideLengthEditText"
+        app:layout_constraintStart_toStartOf="@+id/btnSquareCalculate"
+        app:layout_constraintTop_toTopOf="@+id/squareSideLengthEditText" />
+
+    <Button
+        android:id="@+id/btnSquareCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/calculate"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/squareAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/squareWorking" />
+
+    <TextView
+        android:id="@+id/squareAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="44dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/squareSpinner"
+        app:layout_constraintStart_toEndOf="@+id/squareFragmentTextView" />
+
+    <Spinner
+        android:id="@+id/squareSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="246dp"
+        android:entries="@array/square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareCalculateTextView" />
+
+    <TextView
+        android:id="@+id/squareCalculateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="294dp"
+        android:text="@string/calculate_text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/squareFragmentImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
