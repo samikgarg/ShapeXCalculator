@@ -1,6 +1,10 @@
-# 📐 ShapeX Calculator  
+<a href="">
+  <p align="center">
+    <img src="banner.png" alt="GitHub Banner" width="100%" />
+  </p>
+</a>
 
-🔗 **Download on Google Play:** [ShapeX Calculator](https://play.google.com/store/apps/details?id=your.app.package.name)  
+# 📐 ShapeX Calculator  
 
 ## 📌 Description
 **ShapeX Calculator** is a **quick and easy-to-use** calculator application that eliminates all your **mathematical problems** related to **2D Geometry**. Whether you're a **student, teacher, or professional**, this app helps you compute geometric parameters **instantly and accurately**.
